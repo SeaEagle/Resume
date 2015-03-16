@@ -13,11 +13,12 @@ $(document).ready(function(){
         var $this = $(this), $thisOffset = $this.offset();
 
         //根据浏览器高度设置section的高度
-        //$this.height($window.height()+200);
-        var size = 'auto'+' '+($window.height())+'px';
-        $this.css({
-            backgroundSize: size
-        });
+        //$this.height($window.height());
+
+        //var size = 'auto'+' '+($window.height())+'px';
+        //$this.css({
+        //    backgroundSize: size
+        //});
 
         //缓存data数据
         $this.data('speed', $this.attr('data-speed'));
@@ -27,11 +28,6 @@ $(document).ready(function(){
             //section在视图内
             if( ( $window.scrollTop() + $window.height() ) >= ( $thisOffset.top ) &&
                 ( $thisOffset.top + $this.height() ) >= ( $window.scrollTop()) ){
-
-                $('html, body').animate({
-                    scrollTop:$this.next().offset().top
-                }, 1000, function() {
-                });
 
             }//section在视图内
         });//window scroll

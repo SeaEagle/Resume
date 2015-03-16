@@ -2,9 +2,45 @@
  * resume 本应用针对电脑端(PC)的特定样式
  */
 
+html, body{
+    height: 100%;
+}
+
 /*头部*/
 .header{
+    /*定位*/
+    z-index: 10000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*尺寸*/
+    width: 100%;
+    min-width: 1000px;
+    height: 58px;
 }
+
+/*头部导航*/
+.header nav{
+    /*定位*/
+    position: relative;
+    margin: 0 auto;
+    /*尺寸*/
+    width: 100%;
+    height: 100%;
+}
+
+/*头部分割线*/
+.header .headerSplitLine{
+    /*定位*/
+    position: relative;
+    /*尺寸*/
+    width: 100%;
+    height: 1px;
+    /*颜色*/
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*--------------------华丽丽的分割线--------------------*/
 
 /*主体*/
 .container{
@@ -15,9 +51,8 @@
 
 section[data-type="story"]{
     width: 100%;
-    min-height: 1000px;
+    height: 100%;
     position: relative;
-    box-shadow: 0 0 80px #000000;
 }
 
 section[data-type="story"] article{
@@ -31,6 +66,8 @@ section[data-type="story"] article{
     margin: 0 auto;
 }
 
+/*--------------------华丽丽的分割线--------------------*/
+
 /*个人简介*/
 .introduction{
     background-color: #2E3C5C;
@@ -41,25 +78,27 @@ section[data-type="story"] article{
     background-color: #3CBAE4;
 }
 
-/*兴趣爱好*/
-.interest{
-    background-color: #A6D152;
-}
-
 /*工作经历*/
 .work{
     background-color: #587FA6;
 }
 
+/*兴趣爱好*/
+.interest{
+    background-color: #3CBAE4;
+}
+
 /*远景展望*/
 .future{
-    background-color: #35AAD8;
+    background-color: #587FA6;
 }
 
 /*结束*/
 .end{
     background-color: #2E3C5C;
 }
+
+/*--------------------华丽丽的分割线--------------------*/
 
 /*脚部*/
 .footer{
