@@ -55,6 +55,11 @@ html, body{
     height: 100%;
 }
 
+/**/
+.header #currentIndex{
+    display: none;
+}
+
 /*导航列表*/
 .header .nav .menu{
     /*尺寸*/
@@ -185,4 +190,12 @@ section[data-type="story"] article{
 
 /*脚部*/
 .footer{
+}
+
+/*脚部分割线*/
+.footer .footerSplitLine{
+}
+
+/*脚部附加说明*/
+.footer .caveats{
 }
