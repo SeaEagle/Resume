@@ -4,8 +4,12 @@
 $(document).ready(function(){
 
     //全局变量
+    //页码索引
     var currentIndex = 0;
-    var currentPageTop = 0;
+    //页数
+    var pagesCount = $('.menu .item').length;
+    //监听页面是否正处于滚动, 防止连续滚动
+    var scrolling = false;
 
     //刷新或首次打开, 更新页面显示
     updatePageDisplay(currentIndex);
@@ -18,35 +22,30 @@ $(document).ready(function(){
         updatePageDisplay(index);
     });
 
-    //页面滚动时
-    $(window).scroll(function(){
-
-        if(){//向下滑动
-
-        }else if(){//向上滑动
-
-        }else{//回到原处
-
+    //页面鼠标滚动时
+    $('html,body').mousewheel(function(even, delta, deltaX, deltaY){
+        if( delta > 0 && scrolling == false ){//向上
+            scrolling = true;
+            pageUp();
+        }else if( delta < 0 && scrolling == false ){//向下
+            scrolling = true;
+            pageDown();
         }
     });
 
-    //window对象
-    //var $window = $(window);
-    //
-    //$('section[data-type="story"]').each(function(){
-    //    //当前section
-    //    var $this = $(this), $thisOffset = $this.offset();
-    //    //缓存data数据
-    //    $this.data('speed', $this.attr('data-speed'));
-    //    //当浏览器滚动时
-    //    $(window).scroll(function(){
-    //        //section在视图内
-    //        if( ( $window.scrollTop() + $window.height() ) >= ( $thisOffset.top ) &&
-    //            ( $thisOffset.top + $this.height() ) >= ( $window.scrollTop()) ){
-    //        }//section在视图内
-    //    });//window scroll
-    //
-    //});
+    function pageUp(){
+        if( currentIndex > 0 ){
+            currentIndex--;
+        }
+        updatePageDisplay(currentIndex);
+    }
+
+    function pageDown(){
+        if( currentIndex < ( pagesCount - 1 ) ){
+            currentIndex++;
+        }
+        updatePageDisplay(currentIndex);
+    }
 
     //根据索引, 更新页面显示
     function updatePageDisplay(index){
@@ -74,10 +73,11 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop:$('.container section').eq(index).offset().top
         }, {
-            duration:1000,
+            duration:2000,
+            easing: 'easeIn',
             complete:function() {
                 //滚动完之后的操作, 可在此增加某些页的动画
-                currentPageTop = $('.container section').eq(index).offset().top;
+                scrolling = false;
             }
         });
 
