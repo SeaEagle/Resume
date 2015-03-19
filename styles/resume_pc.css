@@ -133,6 +133,8 @@ html, body{
     /*尺寸*/
     height: 100%;
     width: 100%;
+    /**/
+    /*overflow: hidden;*/
     /*背景色*/
     background-color: #ffffff;
 }
