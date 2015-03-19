@@ -12,7 +12,7 @@ $(document).ready(function(){
     var scrolling = false;
 
     //刷新或首次打开, 更新页面显示
-    updatePageDisplay(currentIndex);
+    updatePageDisplay(currentIndex, currentIndex);
 
     //导航项点击处理
     $('.menu .item').click(function(){
@@ -25,10 +25,8 @@ $(document).ready(function(){
     //页面鼠标滚动时
     $('html,body').mousewheel(function(even, delta, deltaX, deltaY){
         if( delta > 0 && scrolling == false ){//向上
-            scrolling = true;
             pageUp();
         }else if( delta < 0 && scrolling == false ){//向下
-            scrolling = true;
             pageDown();
         }
     });
@@ -36,16 +34,19 @@ $(document).ready(function(){
     //鼠标向上翻页
     function pageUp(){
         if( currentIndex > 0 ){
+            scrolling = true;
             updatePageDisplay(currentIndex, currentIndex-1);
         }
-
+        console.info('up: '+currentIndex);
     }
 
     //鼠标向下翻页
     function pageDown(){
         if( currentIndex < ( pagesCount - 1 ) ){
+            scrolling = true;
             updatePageDisplay(currentIndex, currentIndex+1);
         }
+        console.info('down: '+currentIndex);
     }
 
     //根据索引, 更新页面显示
@@ -65,7 +66,7 @@ $(document).ready(function(){
         //console.info($('section[data-type="story"]').eq(toIndex).attr('class'));
 
         $('html, body').animate({
-            scrollTop:$('.container section').eq(toIndex).offset().top
+            scrollTop: $('.container section').eq(toIndex).offset().top
         }, {
             duration:1000,
             complete:function() {
