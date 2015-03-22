@@ -6,6 +6,8 @@ html, body{
     /*尺寸*/
     height: 100%;
     width: 100%;
+    /*最小尺寸, PC media Size, will be commented in production*/
+    min-height: 960px;
     min-width: 1000px;
 }
 
@@ -140,51 +142,162 @@ html, body{
 }
 
 section[data-type="story"]{
+    /*尺寸*/
     width: 100%;
     height: 100%;
+    /*溢出处理*/
+    /*overflow: hidden;*/
+    /*位置*/
     position: relative;
 }
 
 section[data-type="story"] article{
     /*尺寸*/
-    width: 300px;
-    height: 400px;
+    width: 80%;
+    height: 80%;
+    padding-top: 58px;
     /*位置*/
-    position: absolute;
-    top: 200px;
-    left: 200px;
     margin: 0 auto;
+    /*背景色*/
+    /*background-color: gray;*/
 }
 
 /*--------------------华丽丽的分割线--------------------*/
 
 /*个人简介*/
 .introduction{
+    /*背景色*/
     background-color: #2E3C5C;
 }
+
+/*个人简介-画廊*/
+section[data-name="introduction"] article div.introduction-images{
+    /*尺寸*/
+    width: 600px;
+    height: 200px;
+    /*位置*/
+    position: relative;
+    margin: 20px auto 0 auto;
+}
+
+/*个人简介-画廊-个人头像最外框*/
+section[data-name="introduction"] article div.introduction-images .personal-image{
+    /*尺寸*/
+    width: 170px;
+    height: 170px;
+    /*浮动*/
+    float: left;
+    /*位置*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*边框*/
+    border-radius: 170px;
+    /*背景色*/
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*个人简介-画廊-个人头像外框*/
+section[data-name="introduction"] article div.introduction-images .personal-image div{
+    /*尺寸*/
+    width: 160px;
+    height: 160px;
+    /*位置*/
+    margin: 5px 5px;
+    /*边框*/
+    border-radius: 160px;
+    /*背景图*/
+    background-image: url("../images/eagle.jpg");
+    background-size: 100% 100%;
+    /*背景色*/
+    /*background-color: rgba(255, 255, 255, 0.6);*/
+}
+
+/*个人简介-画廊-其他图片最外框*/
+section[data-name="introduction"] article div.introduction-images .other-images{
+    /*尺寸*/
+    width: 430px;
+    height: 85px;
+    /*浮动*/
+    /*float: right;*/
+    /*定位*/
+    position: absolute;
+    /*位置*/
+    top: 85px;
+    left: 170px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*溢出处理*/
+    overflow: hidden;
+    /*背景色*/
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+/*个人简介-画廊-其他图片item*/
+section[data-name="introduction"] article div.introduction-images .other-images div{
+    /*尺寸*/
+    width: 30%;
+    height: 90%;
+    /*浮动*/
+    float: right;
+    /**/
+    margin-left: 2%;
+    /*边框*/
+    border-radius: 10%;
+    border: solid rgba(255, 255, 255, 0.7);
+    /*背景色*/
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+/*个人简介-文字简介*/
+section[data-name="introduction"] article div.introduction-text{
+    /*尺寸*/
+    width: 600px;
+    height: 400px;
+    /*位置*/
+    margin: 20px auto 0 auto;
+    /*边框*/
+    border-radius: 20px;
+    /*背景色*/
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*--------------------华丽丽的分割线--------------------*/
 
 /*专业技术*/
 .skill{
+    /*背景色*/
     background-color: #587FA6;
 }
+
+/*--------------------华丽丽的分割线--------------------*/
 
 /*工作经历*/
 .work{
+    /*背景色*/
     background-color: #2E3C5C;
 }
+
+/*--------------------华丽丽的分割线--------------------*/
 
 /*兴趣爱好*/
 .interest{
+    /*背景色*/
     background-color: #587FA6;
 }
 
+/*--------------------华丽丽的分割线--------------------*/
+
 /*远景展望*/
 .future{
+    /*背景色*/
     background-color: #2E3C5C;
 }
 
+/*--------------------华丽丽的分割线--------------------*/
+
 /*结束*/
 .end{
+    /*背景色*/
     background-color: #587FA6;
 }
 
@@ -201,3 +314,5 @@ section[data-type="story"] article{
 /*脚部附加说明*/
 .footer .caveats{
 }
+
+/*--------------------华丽丽的分割线--------------------*/
