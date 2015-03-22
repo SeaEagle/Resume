@@ -259,8 +259,8 @@ section[data-name="introduction"] article div.introduction-text{
     /*边框*/
     border-radius: 20px;
     /*文本位置*/
-    padding: 5px 0 0 0;
-    text-align: center;
+    padding: 15px 0 0 20px;
+    text-align: left;
     /*溢出处理*/
     overflow: hidden;
     /*背景色*/
