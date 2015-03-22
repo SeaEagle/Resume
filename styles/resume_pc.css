@@ -165,7 +165,7 @@ section[data-type="story"] article{
 /*--------------------华丽丽的分割线--------------------*/
 
 /*个人简介*/
-.introduction{
+section[data-name="introduction"]{
     /*背景色*/
     background-color: #2E3C5C;
 }
@@ -178,6 +178,8 @@ section[data-name="introduction"] article div.introduction-images{
     /*位置*/
     position: relative;
     margin: 20px auto 0 auto;
+    /*背景色*/
+    /*background-color: red;*/
 }
 
 /*个人简介-画廊-个人头像最外框*/
@@ -222,10 +224,9 @@ section[data-name="introduction"] article div.introduction-images .other-images{
     /*定位*/
     position: absolute;
     /*位置*/
-    top: 85px;
     left: 170px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    top: 100px;
+    margin: 0 0;
     /*溢出处理*/
     overflow: hidden;
     /*背景色*/
@@ -254,12 +255,26 @@ section[data-name="introduction"] article div.introduction-text{
     width: 600px;
     height: 400px;
     /*位置*/
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     /*边框*/
     border-radius: 20px;
+    /*文本位置*/
+    padding: 5px 0 0 0;
+    text-align: center;
+    /*溢出处理*/
+    overflow: hidden;
     /*背景色*/
     background-color: rgba(255, 255, 255, 0.6);
 }
+
+/*个人简介-文字简介-每行介绍*/
+section[data-name="introduction"] article div.introduction-text p{
+    /*尺寸*/
+    width: 100%;
+    /*每行间距*/
+    margin-top: 25px;
+}
+
 
 /*--------------------华丽丽的分割线--------------------*/
 
