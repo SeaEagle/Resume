@@ -249,6 +249,35 @@ section[data-name="introduction"] article div.introduction-images .other-images 
     /*background-color: rgba(255, 255, 255, 0.8);*/
 }
 
+/*个人简介-画廊-其他图片item*/
+section[data-name="introduction"] article div.introduction-images .other-images div a{
+    /*尺寸*/
+    width: 100%;
+    height: 100%;
+    line-height: 85px;
+    font-size: 22px;
+    /**/
+    text-align: center;
+    /**/
+    display: block;
+    /**/
+    color: rgba(255, 255, 255, 0.8);
+    /*背景色*/
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+}
+
+section[data-name="introduction"] article div.introduction-images .other-images div a:visited{
+    /**/
+    color: rgba(255, 255, 255, 0.8);
+}
+
+section[data-name="introduction"] article div.introduction-images .other-images div a:hover{
+    /**/
+    color: #2E3C5C;
+    /*背景色*/
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
 /*个人简介-文字简介*/
 section[data-name="introduction"] article div.introduction-text{
     /*尺寸*/
