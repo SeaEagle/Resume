@@ -259,7 +259,7 @@ section[data-name="introduction"] article div.introduction-text{
     /*边框*/
     border-radius: 20px;
     /*文本位置*/
-    padding: 15px 0 0 20px;
+    /*padding: 15px 0 0 20px;*/
     text-align: left;
     /*溢出处理*/
     overflow: hidden;
@@ -270,9 +270,13 @@ section[data-name="introduction"] article div.introduction-text{
 /*个人简介-文字简介-每行介绍*/
 section[data-name="introduction"] article div.introduction-text p{
     /*尺寸*/
-    width: 100%;
+    width: 90%;
+    /*每行内边距*/
+    padding: 25px 25px 0 20px;
+    /*行高*/
+    /*line-height: 40px;*/
     /*每行间距*/
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 
 
