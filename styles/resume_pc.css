@@ -283,9 +283,38 @@ section[data-name="introduction"] article div.introduction-text p{
 /*--------------------华丽丽的分割线--------------------*/
 
 /*专业技术*/
-.skill{
+section[data-name="skill"]{
     /*背景色*/
     background-color: #587FA6;
+}
+
+section[data-name="skill"] article div.content{
+    /*尺寸*/
+    height: 600px;
+    width: 600px;
+    /*位置*/
+    position: relative;
+    margin: 20px auto 0 auto;
+    /*边框*/
+    border-radius: 20px;
+    /*背景色*/
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+section[data-name="skill"] article div.content h3{
+    /*尺寸*/
+    width: 90%;
+    /*每行内边距*/
+    padding: 40px 25px 10px 20px;
+}
+
+section[data-name="skill"] article div.content p{
+    /*尺寸*/
+    width: 90%;
+    /*行高*/
+    line-height: 40px;
+    /*每行内边距*/
+    padding: 0 25px 0 20px;
 }
 
 /*--------------------华丽丽的分割线--------------------*/
