@@ -320,33 +320,149 @@ section[data-name="skill"] article div.content p{
 /*--------------------华丽丽的分割线--------------------*/
 
 /*工作经历*/
-.work{
+section[data-name="work"]{
     /*背景色*/
     background-color: #2E3C5C;
+}
+
+section[data-name="work"] article div.content{
+    /*尺寸*/
+    height: 600px;
+    width: 600px;
+    /*位置*/
+    position: relative;
+    margin: 20px auto 0 auto;
+    /*边框*/
+    border-radius: 20px;
+    /*背景色*/
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+section[data-name="work"] article div.content h3{
+    /*尺寸*/
+    width: 90%;
+    /*每行内边距*/
+    padding: 40px 25px 10px 20px;
+}
+
+section[data-name="work"] article div.content p{
+    /*尺寸*/
+    width: 90%;
+    /*行高*/
+    line-height: 40px;
+    /*每行内边距*/
+    padding: 0 25px 0 20px;
 }
 
 /*--------------------华丽丽的分割线--------------------*/
 
 /*兴趣爱好*/
-.interest{
+section[data-name="interest"]{
     /*背景色*/
     background-color: #587FA6;
+}
+
+section[data-name="interest"] article div.content{
+    /*尺寸*/
+    height: 600px;
+    width: 600px;
+    /*位置*/
+    position: relative;
+    margin: 20px auto 0 auto;
+    /*边框*/
+    border-radius: 20px;
+    /*背景色*/
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+section[data-name="interest"] article div.content h3{
+    /*尺寸*/
+    width: 90%;
+    /*每行内边距*/
+    padding: 40px 25px 10px 20px;
+}
+
+section[data-name="interest"] article div.content p{
+    /*尺寸*/
+    width: 90%;
+    /*行高*/
+    line-height: 40px;
+    /*每行内边距*/
+    padding: 0 25px 0 20px;
 }
 
 /*--------------------华丽丽的分割线--------------------*/
 
 /*远景展望*/
-.future{
+section[data-name="future"]{
     /*背景色*/
     background-color: #2E3C5C;
+}
+
+section[data-name="future"] article div.content{
+    /*尺寸*/
+    height: 600px;
+    width: 600px;
+    /*位置*/
+    position: relative;
+    margin: 20px auto 0 auto;
+    /*边框*/
+    border-radius: 20px;
+    /*背景色*/
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+section[data-name="future"] article div.content h3{
+    /*尺寸*/
+    width: 90%;
+    /*每行内边距*/
+    padding: 40px 25px 10px 20px;
+}
+
+section[data-name="future"] article div.content p{
+    /*尺寸*/
+    width: 90%;
+    /*行高*/
+    line-height: 40px;
+    /*每行内边距*/
+    padding: 0 25px 0 20px;
 }
 
 /*--------------------华丽丽的分割线--------------------*/
 
 /*结束*/
-.end{
+section[data-name="end"]{
     /*背景色*/
     background-color: #587FA6;
+}
+
+section[data-name="end"] article div.content{
+    /*尺寸*/
+    height: 600px;
+    width: 600px;
+    /*位置*/
+    position: relative;
+    margin: 20px auto 0 auto;
+    /*边框*/
+    border-radius: 20px;
+    /*背景色*/
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+section[data-name="end"] article div.content h3{
+    /*尺寸*/
+    width: 90%;
+    /*每行内边距*/
+    padding: 40px 25px 10px 20px;
+}
+
+section[data-name="end"] article div.content p{
+    /*尺寸*/
+    width: 90%;
+    /*行高*/
+    line-height: 40px;
+    /*每行内边距*/
+    padding: 0 25px 0 20px;
 }
 
 /*--------------------华丽丽的分割线--------------------*/
