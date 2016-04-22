@@ -1,193 +1,467 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <title>Eagle Profile</title>
+    <link rel="shortcut icon" href="./image/shorticon.png" type="image/x-icon">
+    <!---->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!---->
+    <link rel="stylesheet" type="text/css" href="./framework/Bootstrap/css/bootstrap.css">
+    <!---->
+    <link rel="stylesheet" type="text/css" href="./framework/Font-awesome/css/font-awesome.css">
+    <!---->
+    <link rel="stylesheet" type="text/css" href="./framework/Ionicons/css/ionicons.css">
+    <!-- Font Awesome -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <!-- Ionicons -->
+    <!--<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">-->
+    <!---->
+    <link rel="stylesheet" type="text/css" href="./framework/AdminLTE/css/AdminLTE.css">
+    <!---->
+    <link rel="stylesheet" type="text/css" href="./framework/AdminLTE/css/skins/_all-skins.css">
+</head>
 
-      <meta charset='utf-8'>
-      <meta http-equiv="X-UA-Compatible" content="chrome=1">
-      <title>SeaEagle Resume</title>
+<body>
 
-      <!--导入CSS文件-->
-      <!--样式重置-->
-      <link rel="stylesheet" type="text/css" href="styles/reset.css">
-      <!--PC特定样式-->
-      <link rel="stylesheet" type="text/css" href="styles/resume_pc.css" media="all">
-      <!--Pad特定样式-->
-      <link rel="stylesheet" type="text/css" href="styles/resume_pad.css">
-      <!--Mobile特定样式-->
-      <link rel="stylesheet" type="text/css" href="styles/resume_mobile.css">
-
-      <!--导入JavaScript文件-->
-      <!--导入jQuery库-->
-      <script src="scripts/jquery-1.10.2.min.js"></script>
-      <!---->
-      <script src="scripts/jquery.mousewheel.min.js"></script>
-      <!---->
-      <script src="scripts/jquery.easing.1.3.js"></script>
-      <!--本应用特定脚本-->
-      <script src="scripts/resume.js"></script>
-
-  </head>
-
-  <body>
-    <!--头部-->
-    <div class="header">
-        <!--座右铭-->
-        <div class="motto">
-            <!--<p class="title">///梦想就是一种让你感觉坚持就是幸福的东西--Designed By SeaEagle</p>-->
-            <p class="title">///梦想就是一种让你感觉坚持就是幸福的东西</p>
-        </div>
-        <!--头部导航-->
-        <div class="nav">
-            <div id="currentIndex" data-currentIndex=""></div>
-            <!--导航列表-->
-            <ul class="menu">
-                <li class="item active"><a href="#">简介</a></li>
-                <li class="item"><a href="#">技能</a></li>
-                <li class="item"><a href="#">经历</a></li>
-                <li class="item"><a href="#">兴趣</a></li>
-                <li class="item"><a href="#">展望</a></li>
-                <li class="item"><a href="#">尾声</a></li>
-            </ul>
-        </div>
-        <!--头部分割线-->
-        <div class="headerSplitLine"></div>
-    </div>
-
-    <!--主体-->
-    <div class="container">
-        <!--个人简介-->
-        <section class="introduction" data-name="introduction" data-type="story" data-speed="8" data-offsetY="1000">
-            <article>
-                <!--画廊-->
-                <div class="introduction-images">
-                    <!--个人头像-->
-                    <div class="personal-image">
-                        <div>
-                            <!--预留, 点击头像做链接跳转-->
-                        </div>
-                    </div>
-                    <!--其他图片-->
-                    <div class="other-images">
-                        <!--新浪微博-->
-                        <div class="sinaWeibo-image">
-                            <a href="http://weibo.com/1989seaeagle" target="_blank">新浪微博</a>
-                        </div>
-                        <!--Github-->
-                        <div class="github-image">
-                            <a href="https://github.com/seaeagle" target="_blank">Github</a>
-                        </div>
+    <!-- 正文内容 -->
+    <section class="content">
+        <!-- 网格 -->
+        <div class="row">
+            <!-- 左栏 -->
+            <div class="col-md-3">
+                <!-- 个人简介 -->
+                <div class="box box-primary">
+                    <div class="box-body box-profile">
+                        <img class="profile-user-img img-responsive img-circle" src="./image/portrait.png" alt="帅气的头像">
+                        <h3 class="profile-username text-center">郑海鹰 / Eagle</h3>
+                        <p class="text-muted text-center">程序猿 / Software Engineer</p>
+                        <!-- -->
+                        <ul class="list-group list-group-unbordered">
+                            <li class="list-group-item">
+                                <b><i class="fa fa-github margin-r-5"></i> Github</b>
+                                <a class="pull-right" href="https://github.com/SeaEagle" target="_blank">SeaEagle</a>
+                            </li>
+                            <li class="list-group-item">
+                                <b><i class="fa fa-weibo margin-r-5"></i> 新浪微博</b>
+                                <a class="pull-right" href="http://weibo.com/1989seaeagle" target="_blank">正版Eagle</a>
+                            </li>
+                            <!--<li class="list-group-item">-->
+                                <!--<b><i class="fa fa-paw margin-r-5"></i> 个人站点</b>-->
+                                <!--<a class="pull-right" href="http://eaglefire.cn" target="_blank">EagleFire</a>-->
+                            <!--</li>-->
+                        </ul>
+                        <!-- -->
+                        <a href="#" class="btn btn-primary btn-block"><i class="fa fa-envelope margin-r-5"></i> <b>Contact Me</b></a>
                     </div>
                 </div>
-                <!--文字简介-->
-                <div class="introduction-text">
-                    <p>Hello, everybody~ my name is Eagle.</p>
-                    <p>嗨, 大家好~ 我叫海鹰</p>
-                    <p>Yeah, I love coding !</p>
-                    <p>在代码的世界中, 找到了我的梦想</p>
-                    <p>Coding means Creating !</p>
-                    <p>编码的过程, 对我来说就是一个从无到有的创造, 让我感到很爽</p>
-                    <p>I'm a lazy boy, so~ the less code, the better~</p>
-                    <p>作为一名懒惰的程序猿, 用更短的代码做更多的事是我的追求</p>
+                <!-- 更多介绍 -->
+                <div class="box box-primary">
+                    <!-- -->
+                    <div class="box-header with-border">
+                        <h3 class="box-title">About Me</h3>
+                    </div>
+                    <div class="box-body">
+                        <!-- 毕业院校 -->
+                        <strong><i class="fa fa-graduation-cap margin-r-5"></i> 毕业院校 / 专业 / 学历</strong>
+                        <p class="text-muted">华南农业大学 / 软件工程 / 本科</p>
+                        <hr>
+                        <!-- -->
+                        <strong><i class="fa fa-language margin-r-5"></i> 语言</strong>
+                        <p class="text-muted">中文 / English</p>
+                        <hr>
+                        <!-- -->
+                        <strong><i class="fa fa-dribbble margin-r-5"></i> 热爱的活动</strong>
+                        <p class="text-muted">跑步 / 健身 / 羽毛球 / ..</p>
+                        <hr>
+                        <!-- -->
+                        <strong><i class="fa fa-file-text margin-r-5"></i> 最爱的一句话</strong>
+                        <p class="text-muted">梦想是什么，梦想就是一种让你感到坚持就是幸福的东西。</p>
+                        <hr>
+                        <!-- -->
+                        <strong><i class="fa fa-slack margin-r-5"></i> 其它想说的</strong>
+                        <p class="text-muted">一枚89年的码农怀着一个发大财的梦想。</p>
+                        <hr>
+                    </div>
                 </div>
-            </article>
-        </section>
+            </div>
 
-        <!--专业技术-->
-        <section class="skill" data-name="skill" data-type="story" data-speed="8" data-offsetY="2000">
-            <article>
-                <div class="content">
-                    <h3>擅长的技术</h3>
-                    <p>前端：HTML5、CSS3、JavaScript、jQuery</p>
-                    <p>熟悉的前端框架：jQueryUI、Bootstrap、EasyUI……</p>
-                    <p>后台：Java、JSP、WebService</p>
-                    <p>熟悉的后台框架：SSH、EJB、Grails、Django……</p>
-                    <p>终端：iOS</p>
-                    <h3>常去的网址</h3>
-                    <p>Github：Fork大神大牛，学习编写高质量代码</p>
-                    <p>zcool（站酷）：欣赏设计大作，学习设计大拿的形式感</p>
-                    <p>Apache等等各类官网，查看官方文档，学习标准权威的知识及API</p>
-                    <h3>常用的系统</h3>
-                    <p>Mac OS X、Ubuntu、Windows</p>
+            <!-- 右栏 -->
+            <div class="col-md-9">
+                <!-- -->
+                <div class="nav-tabs-custom">
+                    <ul class="nav nav-tabs">
+                        <!-- 人生大事记 -->
+                        <!-- 暂时隐藏 -->
+                        <li class="hidden">
+                            <a href="#activity" data-toggle="tab">人生大事记</a>
+                        </li>
+                        <!-- 技术路线 -->
+                        <li class="active">
+                            <a href="#skill" data-toggle="tab">技术路线</a>
+                        </li>
+                        <!-- 博客文章 -->
+                        <li>
+                            <a href="#blog" data-toggle="tab">博客文章</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <!-- 对应人生大事记 -->
+                        <!-- 暂时隐藏 -->
+                        <div class="hidden tab-pane" id="activity">
+                            <!-- -->
+                            <ul class="timeline timeline-inverse">
+
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-green">
+                                      进化成正常人之前的那些年
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-graduation-cap bg-light-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">留着<a>杀马特</a>的造型，穿着<a>皇马/拜仁</a>的球衣，跟小伙伴们忘我地踢球</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-graduation-cap bg-light-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header"><a>学生手册</a>没收好，各科成绩暴露，大过年的被痛骂</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-graduation-cap bg-light-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">一个<a>善良的学霸女生</a>介绍我去找老师补习，一番引导下，成绩像样了，终于发现自己有得救了</h3>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fa fa-graduation-cap bg-light-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">日夜挑灯，备战高考</h3>
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-green">
+                                      2009年~2013年
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-graduation-cap bg-light-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">就读于<a>华南农业大学</a>，选修了高大上的<a>软件工程</a>专业</h3>
+                                        <!--<div class="timeline-body">毕业</div>-->
+                                        <!--<div class="timeline-footer"></div>-->
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-green">
+                                      2013年7月
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-graduation-cap bg-light-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">如愿走上<a>程序猿</a>的职业发展道路，就职于<a>广东亿迅科技有限公司</a></h3>
+                                        <!--<div class="timeline-body"></div>-->
+                                        <!--<div class="timeline-footer"></div>-->
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-blue">
+                                      2015年4月
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-send bg-green"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">重新选择，重新开始，加入<a>广州明动软件</a>大家庭</h3>
+                                        <!--<div class="timeline-body"></div>-->
+                                        <!--<div class="timeline-footer"></div>-->
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- 时间轴结束 Begin -->
+                                <!--<li>-->
+                                <!--<i class="fa fa-clock-o bg-gray"></i>-->
+                                <!--</li>-->
+                                <!-- 时间轴结束 End -->
+
+                                <!-- timeline time label -->
+                                <li class="time-label">
+                        <span class="bg-red">
+                          10 Feb. 2014
+                        </span>
+                                </li>
+                                <!-- /.timeline-label -->
+                                <!-- timeline item -->
+                                <li>
+                                    <i class="fa fa-envelope bg-blue"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
+                                        <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
+                                        <div class="timeline-body">
+                                            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                                            weebly ning heekya handango imeem plugg dopplr jibjab, movity
+                                            jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
+                                            quora plaxo ideeli hulu weebly balihoo...
+                                        </div>
+                                        <div class="timeline-footer">
+                                            <a class="btn btn-primary btn-xs">Read more</a>
+                                            <a class="btn btn-danger btn-xs">Delete</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- END timeline item -->
+
+                                <!-- timeline item -->
+                                <li>
+                                    <i class="fa fa-user bg-aqua"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 5 mins ago</span>
+                                        <h3 class="timeline-header no-border"><a href="#">Sarah Young</a> accepted your friend request</h3>
+                                    </div>
+                                </li>
+                                <!-- END timeline item -->
+                                <!-- timeline item -->
+                                <li>
+                                    <i class="fa fa-comments bg-yellow"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 27 mins ago</span>
+                                        <h3 class="timeline-header"><a href="#">Jay White</a> commented on your post</h3>
+                                        <div class="timeline-body">
+                                            Take me to your leader!
+                                            Switzerland is small and neutral!
+                                            We are more like Germany, ambitious and misunderstood!
+                                        </div>
+                                        <div class="timeline-footer">
+                                            <a class="btn btn-warning btn-flat btn-xs">View comment</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- END timeline item -->
+
+                                <!-- timeline time label -->
+                                <li class="time-label">
+                        <span class="bg-green">
+                          3 Jan. 2014
+                        </span>
+                                </li>
+                                <!-- /.timeline-label -->
+                                <!-- timeline item -->
+                                <li>
+                                    <i class="fa fa-camera bg-purple"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
+                                        <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+                                        <div class="timeline-body">
+                                            <img src="./image/nonefile.png" alt="..." class="margin">
+                                            <img src="./image/nonefile.png" alt="..." class="margin">
+                                            <img src="./image/nonefile.png" alt="..." class="margin">
+                                            <img src="./image/nonefile.png" alt="..." class="margin">
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- END timeline item -->
+                                <li>
+                                    <i class="fa fa-clock-o bg-gray"></i>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 对应技术路线 -->
+                        <div class="active tab-pane" id="skill">
+                            <!-- -->
+                            <ul class="timeline timeline-inverse">
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-blue">
+                                      后台技能
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-cloud bg-purple"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">后台技能</h3>
+                                        <div class="timeline-body">
+                                            擅长 Java / Java Web 编程 <br>
+                                            熟练 Struts2 / Hibernate / Spring / SpringMVC / MyBatis / Grails 后台框架技术 <br>
+                                            熟练使用 Maven 进行项目构建、自动化部署 <br>
+                                            熟练使用 Nginx 进行反向代理、负载均衡 <br>
+                                            熟练使用 Dubbo + Zookeeper 进行SOA架构、服务治理 <br>
+                                        </div>
+                                        <!--<div class="timeline-footer"></div>-->
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-yellow">
+                                      前端技能
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-desktop bg-aqua"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">前端技能</h3>
+                                        <div class="timeline-body">
+                                            熟练 HTML / CSS / JavaScript / jQuery / ajax <br>
+                                            熟练 Bootstrap / LESS / SASS / Grunt / Gulp 等前端框架技术 <br>
+                                            熟悉前沿的前端使用技巧，如 Parallax Scrolling ..
+                                        </div>
+                                        <!--<div class="timeline-footer"></div>-->
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-light-blue">
+                                      终端技能
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-apple bg-red"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">终端技能</h3>
+                                        <div class="timeline-body">
+                                            熟悉 Objective-C / iOS 编程 <br>
+                                            熟悉 AFNetworking / SDWebImage / Monsary <br>
+                                            熟悉 MVVM 模式 <br>
+                                        </div>
+                                        <!--<div class="timeline-footer"></div>-->
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-green">
+                                      其它技能
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-code bg-purple"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">其它技能</h3>
+                                        <div class="timeline-body">
+                                            熟练使用 Linux 常用命令（用户管理、进程管理、资源管理等）<br>
+                                            熟悉常用的设计模式、数据结构 <br>
+                                        </div>
+                                        <!--<div class="timeline-footer"></div>-->
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-blue">
+                                      杂碎技能
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-simplybuilt bg-aqua"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">杂碎技能</h3>
+                                        <div class="timeline-body">
+                                            快速装机，熟练使用PE、U盘进行系统重装，包括Windows、OSX、Linux <br>
+                                            无泡贴膜，无论钢化膜、高透膜、磨砂膜，都可以快速无泡 <br>
+                                            <i>( O(∩_∩)O  此处技能绝非广告~~ )</i>
+                                        </div>
+                                        <!--<div class="timeline-footer"></div>-->
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- 时间轴结束 Begin -->
+                                <li>
+                                    <i class="fa fa-clock-o bg-gray"></i>
+                                </li>
+                                <!-- 时间轴结束 End -->
+
+                            </ul>
+                        </div>
+
+                        <!-- 对应博客文章 -->
+                        <div class="tab-pane" id="blog">
+                            <!-- -->
+                            <ul class="timeline timeline-inverse">
+                                <!-- -->
+                                <li class="time-label">
+                                    <span class="bg-blue">
+                                        分布式框架
+                                    </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-cloud bg-purple"></i>
+                                    <div class="timeline-item">
+                                        <span class="time"></span>
+                                        <h3 class="timeline-header">Dubbo入门</h3>
+                                        <div class="timeline-body">
+                                            Dubbo是一个分布式服务框架，致力于提供高性能和透明化的RPC远程服务调用方案，是阿里巴巴SOA服务化治理方案的核心框架。<br>
+                                            在本文中，将使用Dubbo、Zookeeper实现一个远程服务调用的入门Demo。
+                                        </div>
+                                        <div class="timeline-footer">
+                                            <a class="btn btn-primary btn-xs" href="https://github.com/SeaEagle/Dubbo-Example" target="_blank">Read more</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- -->
+
+                                <!-- 时间轴结束 Begin -->
+                                <li>
+                                    <i class="fa fa-clock-o bg-gray"></i>
+                                </li>
+                                <!-- 时间轴结束 End -->
+
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
-            </article>
-        </section>
 
-        <!--工作经历-->
-        <section class="work" data-name="work" data-type="story" data-speed="8" data-offsetY="3000">
-            <article>
-                <div class="content">
-                    <h3>2009年9月~2013年6月&nbsp;&nbsp;就读于华南农业大学</h3>
-                    <p>专业：软件工程&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学历：本科</p>
-                    <p>没有辜负这个专业，好好学习编程相关的知识，并考取软件设计师证书</p>
-                    <p>2011年荣获院级优秀班干部称号</p>
-                    <p>最自豪的是，追求到一枚漂亮的妹纸~</p>
-                    <h3>2013年7月~至今&nbsp;&nbsp;就业于广东亿迅科技有限公司</h3>
-                    <p>职位：软件开发工程师</p>
-                    <p>搞得了后台，弄得了前端，耍得了数据库，还配得了服务器</p>
-                    <p>就这样结束了，不，最近还玩起了iOS~</p>
-                    <p>表问我为啥这么屌，人手不足的时候顶着头皮上的~倒是学到好多东西~</p>
-                    <p>参与过的项目：外勤助手（后台）、外勤助手（iOS）、珠海公交导航（后台）、珠海公交调度（后台）等等</p>
-                    <p>表问我为啥做得这么杂，试图做个全能的程序猿不容易啊~~</p>
-                </div>
-            </article>
-        </section>
+            </div>
+        </div>
+    </section>
 
-        <!--兴趣爱好-->
-        <section class="interest" data-name="interest" data-type="story" data-speed="8" data-offsetY="4000">
-            <article>
-                <div class="content">
-                    <h3>看书</h3>
-                    <p>试图做个全能的程序猿，不博览群书，怎能提高水平</p>
-                    <p>编程类的书：深入理解Java虚拟机、大话设计模式等等</p>
-                    <p>设计类的书：设计师要懂心理学、形式感等等</p>
-                    <p>心理学的书：重口味心理学1、2等等</p>
-                    <h3>运动</h3>
-                    <p>正所谓，身体是革命的本钱~</p>
-                    <p>运动项目从乒乓球、羽毛球、网球到篮球、足球，游离在高手与低手之间，正所谓高不成，低不就~</p>
-                    <p>住在师大暨大附近，除非天气不好，要不然，帅气的我会奔跑在学校操场~</p>
-                    <p>运动的目标，他日能练成人鱼线，迷倒众生~</p>
-                </div>
-            </article>
-        </section>
+    <!---->
+    <script src="./framework/jQuery/jQuery-2.1.4.min.js"></script>
+    <!---->
+    <script src="./framework/Bootstrap/js/bootstrap.js"></script>
+    <!---->
+    <script src="./framework/SlimScroll/jquery.slimscroll.js"></script>
+    <!---->
+    <script src="./framework/AdminLTE/js/app.js"></script>
+    <!---->
+    <script src="./framework/AdminLTE/js/demo.js"></script>
 
-        <!--远景展望-->
-        <section class="future" data-name="future" data-type="story" data-speed="8" data-offsetY="5000">
-            <article>
-                <div class="content">
-                    <h3>展望</h3>
-                    <p>从另外个角度看，这也是大家所说的职业规划~</p>
-                    <h3>从小工变成专业</h3>
-                    <p>代码不再凌乱，不再害怕因为重构而进行各种各样的大改~</p>
-                    <p>用精简的代码做更多的事情，不晦涩，易交流~</p>
-                    <h3>从专业变成架构</h3>
-                    <p>能够从全局上审视产品，让做出来的产品优雅地活跃在市场上~</p>
-                    <p>产品的性能，达到和谐的平衡，而不是各种长短板~</p>
-                    <p>系统分析师就差那么几分就让我考到了，于是，我坚信，走到架构师还是有希望的~</p>
-                </div>
-            </article>
-        </section>
-
-        <!--结束-->
-        <section class="end" data-name="end" data-type="story" data-speed="8" data-offsetY="6000">
-            <article>
-                <div class="content">
-                    <h3>尾声</h3>
-                    <p>恩恩，是的，每件事情，有开始，也有结束~</p>
-                    <p>感谢你翻看了那么多页，我相信，作为读者的你，对我也有初步的认识了~</p>
-                    <p>未来，不管我们是朋友，同事，抑或是擦肩而过的陌生人，希望，在这诺大的城市里，我们都能找到自己喜爱的职业，实现自己的价值~</p>
-                </div>
-            </article>
-        </section>
-    </div>
-
-    <!--脚部-->
-    <div class="footer">
-        <!--脚部分割线-->
-        <div class="footerSplitLine"></div>
-        <!--脚部附加说明-->
-        <div class="caveats"></div>
-    </div>
-  </body>
+</body>
 
 </html>
